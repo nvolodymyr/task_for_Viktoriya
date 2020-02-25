@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+#text {
+    display: none;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: monospace;
+    background-color: bisque;
+}
+
+.login-form {
+    width: 300px;
+    margin: auto;
+    padding: 16px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    background-color: aqua;
+}
+
+.form-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form-control {
+    margin-bottom: 8px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-input {
+    height: 32px;
+    width: 100%;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.form-input:invalid {
+    border: 3px solid red;
+}
+
+.submit-button {
+    height: 32px;
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: white;
+    background-color: coral;
+}
+
+.error-text {
+    color: red;
+}
+
+.mdc-list {
+    background-color: lightblue;
+}
+
+thead tr th {
+    text-align: center;
+    background-color: #1c917d;
+}
+
+tbody tr :nth-of-type(even) {
+    background-color: silver;
+}
+
+td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    text-align: center !important;
+}
+
+#status {
+    position: fixed;
+    width: 100%;
+    font: bold 1em sans-serif;
+    color: #FFF;
+    padding: 0.5em;
+}
+
+#log {
+    padding: 2.5em 0.5em 0.5em;
+    font: 1em sans-serif;
+}
+
+.online {
+    background: green;
+}
+
+.offline {
+    background: red;
+}
+
+.mdc-data-table {
+    margin-left: 50px;
+}
+
+
+/*# sourceMappingURL=style4.css.map */

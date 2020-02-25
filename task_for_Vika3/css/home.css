@@ -1,0 +1,342 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat extra';
+    src: url("fonts/Montserrat/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: 'Montserrat light';
+    src: url("fonts/Montserrat/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url("fonts/Work_Sans/WorkSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Leckerli One';
+    src: url("fonts/Leckerli_One/LeckerliOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url("fonts/MyriadPro-Regular.woff");
+}
+
+@font-face {
+    font-family: 'Cambay';
+    src: url("fonts/Cambay/Cambay-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Coustard', serif;
+    src: url("fonts/Coustard/Coustard-Regular.ttf");
+}
+
+body {
+    background-image: url(../img/table_tennis_wallpaper_012.jpg);
+}
+
+.conteiner {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100vh;
+    min-height: 1080px;
+    background-color: #252525;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 600px) {
+    .conteiner {
+        display: block;
+        padding-top: 3%;
+    }
+}
+
+.small-header {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .small-header {
+        display: block;
+    }
+}
+
+.header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    max-height: 50px;
+    background-color: #ddd7d7;
+}
+
+.header__navigation .nav-list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header__navigation .nav-list__item {
+    margin: 10px 20px;
+}
+
+.header__navigation .nav-list__item a {
+    color: lightslategray;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .header {
+        display: none;
+    }
+}
+
+.matches {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    color: greenyellow;
+}
+
+.matches:hover .dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content a {
+    width: 85px;
+    font-family: 'Cambay';
+    text-decoration: none;
+    border: 1px solid #2e9180;
+    border-radius: 5px;
+}
+
+.main__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: mediumaquamarine;
+}
+
+.main-container__description h2 {
+    font-size: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: mintcream;
+}
+
+.main-container__description .main-container__text {
+    width: 100%;
+    height: 100%;
+    font-family: 'Barlow', sans-serif;
+    font-style: italic;
+    font-size: 24px;
+    color: #bccacf;
+}
+
+.main-container__description .main-container__text img {
+    float: right;
+}
+
+.main-container__picture img {
+    width: 50%;
+    min-width: 500px;
+    height: 100%;
+    border-radius: 1%;
+}
+
+.footer {
+    height: 100%;
+    min-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    background-color: #ddd7d7;
+}
+
+@media screen and (max-width: 1000px) {
+    .footer {
+        position: static;
+        bottom: 0px;
+    }
+}
+
+.footer .albedo {
+    color: #eb4710;
+}
+
+.my-conteiner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header,
+main {
+    flex: 1 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*# sourceMappingURL=style.css.map */
